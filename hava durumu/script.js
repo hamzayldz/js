@@ -1,5 +1,5 @@
 const url ="http://api.openweathermap.org/data/2.5/"
-key = "1d0ad7af4433f370e78d720d74ff500b";
+key = "your apiKey";
 const searcher= document.getElementById("arama");
 
 const setQuery=(e)=>{
