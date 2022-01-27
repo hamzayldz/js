@@ -1,0 +1,58 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(23, 140, 207);
+    background-image: url(./kahramanmaras_valiligi_yeni_kararlari_duyurdu_h91467_35433.jpg);
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    opacity: 50;
+
+}
+#conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.header{
+    padding: 3rem;
+}
+h1{
+    font-style: oblique;
+    font-size: 50px;
+    color: chocolate;
+    text-shadow:3px 5px coral;
+}
+.header input{
+width: 100%;
+padding: 9px;
+background: transparent;
+border: 0;
+outline: 0;
+border-bottom: 2px solid pink;
+text-align: center;
+font-size: 20px;
+color: darkmagenta;
+opacity: 12;
+}
+.sehir{
+    font-size: 30px;
+    text-shadow: 1px 1px rgb(23, 140, 207);
+}
+#temp{
+font-size: 50px;
+margin-bottom: 15px;
+}
+.weather{
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px;
+}
+.minmax{
+    font-size: 18px;
+    font-style: italic;
+    margin: 10px;
+}
