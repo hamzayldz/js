@@ -5,47 +5,38 @@ const amountLimit = 20;
 console.log(customer)
 
 
+function getFinalOrder(c, a) {
+    let arr1 = []
+    const siralama = []
 
-let arr1 = []
-const siralama = []
+    function funcx(x) {
 
-
-function getFinalOrder(customer, amountLimit) {
-
-
-
-    function sere(x) {
-        x = x * amountLimit
-        for (let i = 0; i < customer.length + 2; i++) {
-            if (customer[0] <= x) {
-                console.log(customer[0])
-                arr1.push(customer[0])
-                customer.shift()
-                console.log(customer)
+        x = x * a
+        for (let i = 0; i < c.length + 2; i++) {
+            if (c[0] <= x) {
+                console.log(c[0])
+                arr1.push(c[0])
+                c.shift()
+                console.log(c)
             } else {
-                customer.push(customer[0])
-                customer.shift()
-                console.log(customer)
+                c.push(c[0])
+                c.shift()
+                console.log(c)
             }
 
         }
     }
     for (let a = 1; a < customer.length + 10; a++) {
 
-        sere(a)
+        funcx(a)
     }
 
+
+    c = arr1
+
+    return c
 
 }
 
 
-
-getFinalOrder(customer, amountLimit)
-
-
-
-customer = arr1
-
-console.log(customer)
-
-console.log(siralama)
+console.log(getFinalOrder(customer, amountLimit))
