@@ -1,4 +1,4 @@
-let customer = [170, 150, 35, 4, 70, 45, 20, 50, 100, ]
+let customer = [170, 150, 35, 4, 70, 25, 20, 50, 100, ]
 
 const amountLimit = 20;
 
@@ -6,7 +6,7 @@ console.log(customer)
 
 
 function getFinalOrder(c, a) {
-    let arr1 = []
+
     const siralama = []
 
     function funcx(x) {
@@ -14,14 +14,14 @@ function getFinalOrder(c, a) {
         x = x * a
         for (let i = 0; i < c.length + 2; i++) {
             if (c[0] <= x) {
-                console.log(c[0])
-                arr1.push(c[0])
+                // console.log(c[0])
+                siralama.push(c[0])
                 c.shift()
-                console.log(c)
+                    // console.log(c)
             } else {
                 c.push(c[0])
                 c.shift()
-                console.log(c)
+                    // console.log(c)
             }
 
         }
@@ -32,9 +32,9 @@ function getFinalOrder(c, a) {
     }
 
 
-    c = arr1
 
-    return c
+
+    return siralama
 
 }
 
